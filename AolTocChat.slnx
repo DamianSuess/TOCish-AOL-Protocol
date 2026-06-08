@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AolToc.Client/AolToc.Client.csproj" />
+    <Project Path="src/AolToc.Protocol/AolToc.Protocol.csproj" />
+    <Project Path="src/AolToc.Server/AolToc.Server.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AolToc.Tests/AolToc.Tests.csproj" />
+  </Folder>
+</Solution>
