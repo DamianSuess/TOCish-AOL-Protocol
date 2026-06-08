@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace AolToc.Protocol;
 
 public sealed record TocEvent(string Name, IReadOnlyList<string> Arguments)

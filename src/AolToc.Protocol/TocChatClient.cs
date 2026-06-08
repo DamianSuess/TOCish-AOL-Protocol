@@ -1,4 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Net.Sockets;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace AolToc.Protocol;
 
@@ -15,11 +20,17 @@ public sealed class TocChatClient : IAsyncDisposable
   public string? SignedOnScreenName { get; private set; }
 
   public event EventHandler<TocEvent>? EventReceived;
+
   public event EventHandler<ChatRoomJoined>? ChatRoomJoined;
+
   public event EventHandler<ChatMessage>? ChatMessageReceived;
+
   public event EventHandler<DirectMessage>? DirectMessageReceived;
+
   public event EventHandler<RoomMemberChanged>? RoomMemberChanged;
+
   public event EventHandler<string>? ErrorReceived;
+
   public event EventHandler? Disconnected;
 
   public async Task ConnectAsync(TocClientOptions options, CancellationToken cancellationToken = default)
