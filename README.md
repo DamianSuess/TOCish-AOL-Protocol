@@ -4,6 +4,8 @@ A small .NET 10 C# solution that implements a local AOL TOC/TOC2-style chat serv
 
 This is not a connector to the retired AOL/AIM network. It preserves the practical shape of TOC-style clients and servers: `FLAPON` negotiation, FLAP frames, roasted passwords, `toc_` / `toc2_` command names, and colon-delimited server events.
 
+![](screenshot.png)
+
 ## Projects
 
 - `src/AolToc.Protocol` - FLAP framing, command/event parsing, password roasting, and `TocChatClient`.

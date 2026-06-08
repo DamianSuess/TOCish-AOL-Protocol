@@ -1,3 +1,5 @@
+using System;
+
 namespace AolToc.Protocol;
 
 public enum TocProtocolFlavor
